@@ -1,12 +1,12 @@
 <h1 align="center"><b>░▒▓█►─═ 𝙍𝙊𝙃𝘼𝙉 𝐌𝐀𝐒𝐒 𝐑𝐄𝐏𝐎𝐑𝐓 ═─◄█▓▒░</b></h1>
 <p align="center">
-  <img src="https://te.legra.ph/file/29626078a1324cf58ce2a.jpg" alt="BRANDEDMASSREPORT">
+  <img src="https://te.legra.ph/file/29626078a1324cf58ce2a.jpg" alt="itz_me_rohu">
 </p>
 
 
 ### 🚀 ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ
   
-  <p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/WCGKING/BRANDEDMASSREPORT"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+  <p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/WCGKING/sudarshan7676"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 
 
@@ -18,7 +18,7 @@
 
 
 ## 💖 ᴄʀᴇᴅɪᴛs
-- » [𝗕𝗥𝗔𝗡𝗗𝗘𝗗 𓆩🇽𓆪 𝗞𝗜𝗡𝗚](https://github.com/WCGKING)
+- » [𝗥𝗢𝗛𝗔𝗡𓆩🇽𓆪 𝗕𝗢𝗧](https://github.com/sudarshan7676)
 - 
 
 - <h3 align="center">
@@ -26,17 +26,17 @@
 </h3>
 
 <p align="center">
-<a href="https://t.me/BRANDED_WORLD"><img src="https://img.shields.io/badge/-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/itz_me_rohu"><img src="https://img.shields.io/badge/-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 
 <p align="center">
-<a href="https://t.me/BRANDRD_BOT"><img src="https://img.shields.io/badge/-Support%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/ilovemove143"><img src="https://img.shields.io/badge/-Support%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 
 <p align="center">
-<a href="https://t.me/BRANDED_PAID_CC"><img src="https://img.shields.io/badge/-Support%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/ilovemovie123"><img src="https://img.shields.io/badge/-Support%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 
 
-- <b> _sᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋs ᴛᴏ [ᴛᴇᴀᴍ ʙʀᴀɴᴅᴇᴅ](https://github.com/WCGKING) ғᴏʀ [ʙʀᴀɴᴅᴇᴅ ᴍᴜsɪᴄ ʙᴏᴛ](https://t.me/BRANDRD_BOT)_</b>
+
 
