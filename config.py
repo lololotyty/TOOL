@@ -1,3 +1,4 @@
 api_id=22430866
 api_hash=20a0f0284c49fe38bb3676c297fbf947
 bot_token=7680113655:AAGBrFFksT0yDDfoHEci3B42WM8h31Su3c4
+SUDO=@Kakakakllbuv
