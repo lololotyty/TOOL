@@ -1,4 +1,6 @@
 # Empty init file to make plugins a package
+# This file can be empty, it just needs to exist
+
 from aiohttp import web
 
 routes = web.RouteTableDef()
