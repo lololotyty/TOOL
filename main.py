@@ -1,11 +1,15 @@
-import logging
 from pyrogram import Client
-from info import Config
+import logging
 import logging.config
+from info import Config
+from aiohttp import web
+from plugins import web_server
+import pyromod
 
-# Setup logging
+# Configure logging
 logging.config.fileConfig('logging.conf')
-logger = logging.getLogger(__name__)
+logging.getLogger().setLevel(logging.INFO)
+logging.getLogger("pyrogram").setLevel(logging.ERROR)
 
 class Bot(Client):
     def __init__(self):
@@ -14,25 +18,31 @@ class Bot(Client):
             api_id=Config.API_ID,
             api_hash=Config.API_HASH,
             bot_token=Config.BOT_TOKEN,
-            plugins=dict(root="plugins")  # This line loads plugins
+            plugins=dict(root="plugins"),
+            in_memory=True
         )
-        self.logger = logger
+        self.logger = logging.getLogger(__name__)
 
     async def start(self):
         await super().start()
-        self.logger.info("Bot started!")
+        me = await self.get_me()
+        self.logger.info(f"Bot started as {me.first_name} [@{me.username}]")
+        
+        # Start web server
+        app = web.AppRunner(await web_server())
+        await app.setup()
+        bind_address = "0.0.0.0"
+        port = int(os.environ.get("PORT", 8080))
+        await web.TCPSite(app, bind_address, port).start()
+        self.logger.info(f"Web server started on port {port}")
 
     async def stop(self):
         await super().stop()
         self.logger.info("Bot stopped!")
 
 def main():
-    try:
-        bot = Bot()
-        bot.run()
-    except Exception as e:
-        logging.error(f"Fatal error: {str(e)}")
-        raise e
+    bot = Bot()
+    bot.run()
 
 if __name__ == "__main__":
     main()
