@@ -1,10 +1,9 @@
 Pyrogram==2.0.103
 TgCrypto
-ujson
-Pyromod
+pyromod
+python-dotenv
 aiohttp
 pytz
 psutil
 Flask==1.1.2
 gunicorn==20.1.0
-python-dotenv
