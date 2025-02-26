@@ -1,24 +1,29 @@
-import os
-import sys
 from pyrogram import Client, filters
-from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
-
+from pyrogram.types import Message
 from info import Config, Txt
 
+@Client.on_message(filters.private & filters.command("start"))
+async def start_command(bot: Client, msg: Message):
+    await msg.reply_text(
+        text=Txt.START_MSG.format(msg.from_user.mention),
+        disable_web_page_preview=True
+    )
 
-@Client.on_message(filters.private & filters.command('start'))
-async def handle_start(bot:Client, message:Message):
+@Client.on_message(filters.private & filters.command("help"))
+async def help_command(bot: Client, msg: Message):
+    await msg.reply_text(
+        text=Txt.HELP_MSG,
+        disable_web_page_preview=True
+    )
 
-    Btn = [
-        [InlineKeyboardButton(text='🌷 Hᴇʟᴘ 🌷', callback_data='help'), InlineKeyboardButton(text='🌷 Sᴇʀᴠᴇʀ Sᴛᴀᴛs 🌷', callback_data='server')],
-        [InlineKeyboardButton(text='🌷 Uᴘᴅᴀᴛᴇs 🌷', url='https://t.me/ilovemovie143'), InlineKeyboardButton(text='🌷 Aʙᴏᴜᴛ 🌷', callback_data='about')],
-        [InlineKeyboardButton(text='🌷 Dᴇᴠᴇʟᴏᴘᴇʀ 🌷', url='https://t.me/itz_me_rohu')]
-        ]
+@Client.on_message(filters.private & filters.command("about"))
+async def about_command(bot: Client, msg: Message):
+    await msg.reply_text(
+        text=Txt.ABOUT_MSG,
+        disable_web_page_preview=True
+    )
 
-    await message.reply_text(text=Txt.START_MSG.format(message.from_user.mention), reply_markup=InlineKeyboardMarkup(Btn))
-
-
-#Restart to cancell all process 
+#Restart to cancel all process 
 @Client.on_message(filters.private & filters.command("restart") & filters.user(Config.SUDO))
 async def restart_bot(b, m):
     await m.reply_text("💥__Rᴇꜱᴛᴀʀᴛɪɴɢ.....__")
