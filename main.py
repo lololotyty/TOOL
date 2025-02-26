@@ -3,8 +3,9 @@ import logging
 import logging.config
 from info import Config
 from aiohttp import web
-from plugins import web_server
+from plugins.web_server import web_server  # Updated import
 import pyromod
+import os
 
 # Configure logging
 logging.config.fileConfig('logging.conf')
